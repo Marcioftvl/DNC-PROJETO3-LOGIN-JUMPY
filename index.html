@@ -7,34 +7,47 @@
     <link rel="stylesheet" type="text/css" href="Stylesheet1.css" />
 </head>
 <body>
-    <img src="img/logodnc.svg" alt="Logo dnc" />
+    <img src="img/logodnc.svg" alt="Logo dnc" width="164" />
 
-    <img src="img/logojumpy.svg" alt="Logo dnc" />
-    <h1>Bem vindo ao Jumpy!</h1>
+    <section>
+        <img src="img/logojumpy.svg" alt="Logo dnc" width="310" />
+        <h1>Bem vindo ao Jumpy!</h1>
 
-    <form>
-        <label>Nome completo:</label>
-        <input id="iptName" type="text" placeholder="Nome completo" />
-        <span class="invalid-input">'Campo Obrigatório'</span>
+        <form>
+            <div>
+                <label>Nome completo:</label>
+                <input id="iptName" type="text" placeholder="Nome completo" />
+                <span class="invalid-input">'Campo Obrigatório'</span>
+            </div>
 
-        <label>Email:</label>
-        <input id="iptEmail"type="email" placeholder="Email@email.com" />
-        <span class="invalid-input">'Campo Obrigatório'</span>
+            <div>
+                <label>Email:</label>
+                <input id="iptEmail" type="email" placeholder="Email@email.com" />
+                <span class="invalid-input">'Campo Obrigatório'</span>
+            </div>
 
-        <label>Telefone:</label>
-        <input id="ipttel" type="tel" placeholder="(00) 00000-0000" />
-        <span>'Campo Obrigatório'</span>
+            <div>
+                <label>Telefone:</label>
+                <input id="ipttel" type="tel" placeholder="(00) 00000-0000" />
+                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+            </div>
 
-        <label>CPF:</label>
-        <input id="iptCpf" type="text" placeholder="000.000.000-00" />
-        <span class="invalid-input">'Campo Obrigatório'</span>
+            <div>
+                <label>CPF:</label>
+                <input id="iptCpf" type="text" placeholder="000.000.000-00" />
+                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+            </div>
 
-        <label>Senha:</label>
-        <input id="iptSenha" type="password" placeholder="********" />
-        <span class="invalid-input">'Campo Obrigatório'</span>
+            <div>
+                <label>Senha:</label>
+                <input id="iptpass" type="password" placeholder="********" />
+                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+            </div>
 
-        <button type="submit">CADASTRAR</button>
-    </form>
+            <button id="bntRegister" type="submit">CADASTRAR</button>
+            <span id="register-sucess">Sucesso</span>
+        </form>
+    </section>
 
 </body>
 </html>

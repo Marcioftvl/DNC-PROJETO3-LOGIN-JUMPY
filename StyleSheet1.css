@@ -1,3 +1,86 @@
 ﻿body {
+    display:flex;
+    flex-direction:column;
     background: #1E1E1E
+}
+
+body img{
+    margin-left: 3%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+section {
+    margin: auto;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div{
+    display: flex;
+    flex-direction:column;
+    margin-bottom:5px;
+}
+
+form label {
+    text-align: left;
+    margin-top: 10px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+form input {
+    margin-top:5px;
+    height: 22px;
+    width: 524px;
+    padding: 11px 13px;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Escala neutra/Preto */
+    border: 1px solid #181818;
+    border-radius: 10px;
+}
+
+
+#bntRegister {
+    margin-top:20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+
+    height: 48px;
+    gap: 8px;
+    color: #FFFFFF;
+    background-color: #0C70F2;
+    border-radius: 6px;
+}
+
+.invalid-input {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #E73550;
 }
