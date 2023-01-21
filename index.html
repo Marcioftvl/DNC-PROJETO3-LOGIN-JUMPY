@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Cadastro</title>
     <link rel="stylesheet" type="text/css" href="Stylesheet1.css" />
+    
 </head>
 <body>
     <img src="img/logodnc.svg" alt="Logo dnc" width="164" />
@@ -17,37 +18,41 @@
             <div>
                 <label>Nome completo:</label>
                 <input id="iptName" type="text" placeholder="Nome completo" />
-                <span class="invalid-input">'Campo Obrigatório'</span>
+                <span name="vName" class="valid-input">'Campo Obrigatório'</span>
             </div>
 
             <div>
                 <label>Email:</label>
                 <input id="iptEmail" type="email" placeholder="Email@email.com" />
-                <span class="invalid-input">'Campo Obrigatório'</span>
+                <span name="vEmail" class="valid-input">'Campo Obrigatório'</span>
             </div>
 
             <div>
                 <label>Telefone:</label>
-                <input id="ipttel" type="tel" placeholder="(00) 00000-0000" />
-                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+                <input id="iptTel" type="tel" placeholder="(00) 00000-0000" min="10" />
+                <span name="vTel" class="valid-input">'Campo Obrigatório'</span>
             </div>
 
             <div>
                 <label>CPF:</label>
-                <input id="iptCpf" type="text" placeholder="000.000.000-00" />
-                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+                <input id="iptCpf" type="text" placeholder="000.000.000-00" min="11" maxlength="14" />
+                <span name="vCpf" class="valid-input">'Campo Obrigatório'</span>
             </div>
 
             <div>
                 <label>Senha:</label>
-                <input id="iptpass" type="password" placeholder="********" />
-                <span class="invalid-input" hidden="">'Campo Obrigatório'</span>
+                <input id="iptPass" type="password" placeholder="********" />
+                <span name="vPass" class="valid-input">'Campo Obrigatório'</span>
             </div>
 
-            <button id="bntRegister" type="submit">CADASTRAR</button>
-            <span id="register-sucess">Sucesso</span>
+            <div>
+                <button id="bntRegister" type="submit">CADASTRAR</button>
+                <span id="registerSucess"></span>
+            </div>
         </form>
     </section>
 
+    <footer></footer>
+    <script type="text/javascript" src="Script1.js"></script>
 </body>
 </html>

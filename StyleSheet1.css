@@ -6,6 +6,7 @@
 
 body img{
     margin-left: 3%;
+    margin-top:2%;
 }
 
 h1 {
@@ -23,6 +24,9 @@ section {
     text-align: center;
 }
 
+section img{
+    margin:0px;
+}
 
 form {
     display: flex;
@@ -50,7 +54,7 @@ form label {
 form input {
     margin-top:5px;
     height: 22px;
-    width: 524px;
+    width: 480px;
     padding: 11px 13px;
     gap: 8px;
     background: rgba(255, 255, 255, 0.9);
@@ -75,12 +79,36 @@ form input {
     border-radius: 6px;
 }
 
-.invalid-input {
+form span {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     text-align: right;
+}
+
+.invalid-input {
+    display:block;
     color: #E73550;
+}
+
+.valid-input{
+    display:none;
+}
+
+.invalid-register {
+    display: block;
+    text-align: left;
+    color: #E73550;
+}
+
+.valid-register {
+    display: block;
+    text-align: left;
+    color: #0F7B0F;
+}
+
+footer{
+    margin-bottom:40px;
 }
